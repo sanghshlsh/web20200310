@@ -1,8 +1,8 @@
-https://discord.gg/r5Knybf
-https://github.com/sebaek/web20200310
-https://www.w3schools.com
+* [w3schools](https://www.w3schools.com)
+* [github](https://github.com/sebaek/web20200310)
+* [discord](https://discord.gg/r5Knybf)
 
--download
-chrome
-d2coding
-vscode
+* download
+  * chrome
+  * d2coding
+  * vscode
