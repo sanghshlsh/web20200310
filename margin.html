@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        div {
+            border: 1px solid black;
+        }
+
+        #elem1 {
+            margin-top: 50px;
+            margin-right: 20px;
+            margin-left: 80px;
+            margin-bottom: 100px;
+        }
+
+        #elem2 {
+            /* 4개: top right bottom left*/
+            /* 3개: top (right left) bottom */
+            /* 2개: (top bottom) (right left) */
+            /* 1개: 4방향 모두 */
+            margin: 50px 20px 100px 80px;
+        }
+
+        #elem3 {
+            width: 300px;
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="elem3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, quia!
+    </div>
+    <hr>
+
+
+    <div id="elem2">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, doloribus!
+    </div>
+    <div id="elem1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, minima.
+    </div>
+</body>
+
+</html>
