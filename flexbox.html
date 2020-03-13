@@ -5,21 +5,42 @@
         .item:nth-child(1) {
             background-color: red;
             font-size: 20px;
+            flex: 1;
         }
         .item:nth-child(2) {
+            width: 200px;
             background-color: blue;
             font-size: 10px;
+            flex: 2;
         }
         .item:nth-child(3) {
+            width: 200px;
             background-color: yellow;
             font-size:5px;
         }
         .container {
             display: flex;
+            flex-direction: row;
             height: 200px;
             background-color: grey;
             align-items: stretch;
-            justify-content: space-evenly;
+            justify-content: flex-start;
+        }
+        .inner-container {
+            display: flex;
+            flex-direction: column;
+        }
+        .inner-container div {
+            flex: 1;
+        }
+        .inner-container div:nth-child(1) {
+            background-color: violet;
+        }
+        .inner-container div:nth-child(2) {
+            background-color: gold;
+        }
+        .inner-container div:nth-child(3) {
+            background-color: indigo;
         }
     </style>
 </head>
@@ -28,7 +49,11 @@
     <div class="container">
         <div class="item">Lorem.</div>
         <div class="item">Distinctio.</div>
-        <div class="item">Fugit.</div>
+        <div class="item inner-container">
+            <div>Lorem.</div>
+            <div>Doloribus?</div>
+            <div>Architecto?</div>
+        </div>
     </div>
     <div class="normal">Lorem ipsum dolor sit amet.</div>
 
