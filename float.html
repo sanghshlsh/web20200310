@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div.float {
+            border: 1px solid black;
+            width: 100px;
+            height: 200px;
+            float: left;
+        }
+        div.float:nth-child(3) {
+            height: 100px;
+            float: right;
+        }
+        .normal {
+            border: 1px solid black;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="float">Lorem.</div>
+    <div class="float">Esse?</div>
+    <div class="float">Rem.</div>
+
+    <div class="normal">Lorem ipsum dolor sit amet.</div>
+</body>
+</html>
