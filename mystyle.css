@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    background-color: black;
+}
+.menu:hover {
+    background-color: gold;
+}
+.menu {
+    color: white;
+    padding: 10px;
+}
+.dummy {
+    flex: 1;
+}
+.main-container {
+    margin-top: 20px;
+    display: flex;
+
+}
+.main-content {
+    flex: 1;
+}
+.side-bar {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+}
