@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
@@ -12,9 +13,10 @@
     <style>
     </style>
 </head>
+
 <body>
     <div class='container'>
-    
+        <div id="demo"></div>
     </div>
 
     <script>
@@ -49,8 +51,46 @@
 
         var g = 333, h = 555, i = 999;
 
+        // console.log(j);
+
+
+        console.log("hello");
+        console.log('hello');  // string
+
+        var j;
+        j = "hi";
         console.log(j);
+        j = "안녕";
+        console.log(j);
+        j = 33;
+        console.log(j);
+        
+        var k = 3, l = "hi", m = 7;
+
+        k = m;
+        console.log(k);
+        
+        // 문제1
+        var n = 10;
+        var o = 30;
+
+        // 여러분들이 작성
+        // 
+        var p = n;
+        n = o;
+        o = p;
+
+        console.log(n); // 30;
+        console.log(o); // 10;
+        
+        alert(n);
+        alert(o);
+
+        document.getElementById("demo").innerHTML = n;
+
+
 
     </script>
 </body>
+
 </html>
