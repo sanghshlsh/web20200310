@@ -23,10 +23,11 @@
         <div id="result"></div>
     </div>
     <script>
-    function setResult(a) {
-        console.log(a);
+    function setResult(a, message) {
+        console.log('a', a);
+        console.log('message', message);
         
-        document.getElementById("result").innerHTML = a;
+        document.getElementById("result").innerHTML = message + a;
     }
 
     function plus() {
@@ -35,7 +36,7 @@
 
         var r = Number(num1) + Number(num2);
 
-        setResult(r);
+        setResult(r, "더한 결과는 ");
     }
 
     function minus() {
@@ -44,7 +45,7 @@
 
         var r = Number(num1) - Number(num2);
 
-        setResult(r);
+        setResult(r, "뺀 결과는 ");
     }
 
     function times() {
@@ -53,7 +54,7 @@
 
         var r = Number(num1) * Number(num2);
 
-        setResult(r);
+        setResult(r, "곱한 결과는 ");
     }
 
     function divide() {
@@ -62,7 +63,7 @@
 
         var r = Number(num1) / Number(num2);
 
-        setResult(r);
+        setResult(r, "나눈 결과는 ");
     }
 
     </script>
