@@ -23,13 +23,19 @@
         <div id="result"></div>
     </div>
     <script>
+    function setResult(a) {
+        console.log(a);
+        
+        document.getElementById("result").innerHTML = a;
+    }
+
     function plus() {
         var num1 = document.getElementById("input1").value;
         var num2 = document.getElementById("input2").value;
 
         var r = Number(num1) + Number(num2);
 
-        document.getElementById('result').innerHTML = r;
+        setResult(r);
     }
 
     function minus() {
@@ -38,7 +44,7 @@
 
         var r = Number(num1) - Number(num2);
 
-        document.getElementById("result").innerHTML = r;
+        setResult(r);
     }
 
     function times() {
@@ -47,7 +53,7 @@
 
         var r = Number(num1) * Number(num2);
 
-        document.getElementById("result").innerHTML = r;
+        setResult(r);
     }
 
     function divide() {
@@ -56,7 +62,7 @@
 
         var r = Number(num1) / Number(num2);
 
-        document.getElementById("result").innerHTML = r;
+        setResult(r);
     }
 
     </script>
