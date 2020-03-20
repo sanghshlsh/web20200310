@@ -17,6 +17,7 @@
         <input type="number" name="" id="input1" class="form-control">
         <input type="number" name="" id="input2" class="form-control">
         <button onclick="loop()" class="btn btn-success">출력</button>
+        <h1>합계: <span id="result1"></span></h1>
         <h1 id="result"></h1>
         
     </div>
@@ -29,10 +30,16 @@
         n2 = Number(n2);
 
         document.getElementById("result").innerHTML = "";
-        
+
         for (var i = n1; i <= n2; i++) {
             document.getElementById("result").innerHTML += (i + ", ");
         }
+
+        var sum = 0;
+        for (var i = n1; i <= n2; i++) {
+            sum += i;
+        }
+        document.getElementById('result1').innerHTML = sum;
     }
     </script>
 </body>
