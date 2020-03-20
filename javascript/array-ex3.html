@@ -26,7 +26,7 @@
         array.pop();
 
         var text = "";
-        for (var i = 0; i < array.length; i++) {
+        for (var i = array.length-1; i >= 0; i--) {
             text += "<li>" + array[i] + "</li>";
         }
         document.getElementById("result").innerHTML = text;
@@ -37,7 +37,7 @@
         array.push(item);
 
         var text = "";
-        for (var i = 0; i < array.length; i++) {
+        for (var i = array.length-1 ; i >= 0; i--) {
             text += "<li>" + array[i] + "</li>";
         }
 
