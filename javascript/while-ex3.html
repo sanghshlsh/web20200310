@@ -23,7 +23,10 @@
 
             while (numbers.length < 6) {
                 var newNumber = parseInt(Math.random() * 45 + 1);
-                numbers.push(newNumber);
+
+                if (!numbers.includes(newNumber)) {
+                    numbers.push(newNumber);
+                }
                 console.log(newNumber);
             }
 
