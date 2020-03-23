@@ -22,6 +22,18 @@
     <script>
         var array = [];
 
+        function remove() {
+            array.pop();
+
+            var text = "";
+            var i = 0;
+            while(i < array.length) {
+                text += "<li>" + array[i] + "</li>";
+                i++;
+            }
+            document.getElementById("result").innerHTML = text;
+        }
+
         function add() {
             var n = document.getElementById("input1").value;
             array.push(n);
