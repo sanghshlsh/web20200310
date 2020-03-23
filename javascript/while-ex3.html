@@ -22,12 +22,18 @@
             var numbers = [];
 
             while (numbers.length < 6) {
-                numbers.push(parseInt(Math.random() * 45 + 1));
+                var newNumber = parseInt(Math.random() * 45 + 1);
+                numbers.push(newNumber);
+                console.log(newNumber);
             }
+
+            console.log("완성후...");
 
             var text = "";
             while (numbers.length > 0) {
-                text += numbers.pop() + "<br>";
+                var removedNumber = numbers.pop();
+                text += removedNumber + "<br>";
+                console.log(removedNumber);
             }
             
             document.getElementById("result").innerHTML = text;
