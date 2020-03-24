@@ -14,11 +14,19 @@
 </head>
 <body>
     <div class='container'>
-        <button class="btn btn-info">아이언맨</button><button class="btn btn-success">캡틴</button>
+        <button onclick="setIronman()" class="btn btn-info">아이언맨</button>
+        <button onclick="setCaptain()" class="btn btn-success">캡틴</button>
         <img src="" alt="" id="img1" class="img-fluid">
     </div>
     <script>
-    
+        function setIronman() {
+            var image = document.getElementById("img1");
+            image.src = "아이언맨.jpg";
+        }
+        function setCaptain() {
+            document.getElementById("img1").src = "캡틴.jpg";
+        }
+
     </script>
 </body>
 </html>
