@@ -20,6 +20,10 @@
         $("#btn2").click(function() {
             $("#effect").show("slow");
         });
+
+        $("#btn3").click(function() {
+            $("#effect").toggle();
+        })
     });
     </script>
 </head>
@@ -32,6 +36,10 @@
             <div class="col">
                 <button class="btn btn-block btn-danger" id="btn2">보이기</button>
             </div>
+        </div>
+
+        <div class="row">
+            <div class="col"><button id="btn3" class="btn btn-primary btn-block">토글</button></div>
         </div>
 
         <div class="row" id="effect">
