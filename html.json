@@ -31,12 +31,12 @@
 			"\t</style>",
 			"\t<script>",
 			"\t$(document).ready(function() {",
-			"\t$0",
 			"\t});",
 			"\t</script>",
 			"</head>",
 			"<body>",
 			"\t<div class='container'>",
+			"\t$0",
 			"\t</div>",
 			"</body>",
 			"</html>"
