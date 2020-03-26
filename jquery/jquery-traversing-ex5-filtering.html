@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("h1").first().css("color", "yellow");
+        $("h1").last().css("color", "red");
+        $("h1").eq(5).css("color", "blue");
+
+        $("h1").filter(".myhead").css("color", "gold");
+        $("h1.myhead").css("color", "gold");
+
+        $("h1").not(".myhead").css("text-decoration", "underline");
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+
+        <h1>Lorem, ipsum dolor.</h1>
+        <h1>Nesciunt, nihil quam.</h1>
+        <h1 class="myhead">Fuga, reprehenderit libero?</h1>
+        <div>
+            <h1 class="myhead">Distinctio, reiciendis dolore.</h1>
+            <h1>Sequi, sed veritatis!</h1>
+            <h1>Harum, labore velit.</h1>
+        </div>
+        <h1>Repellat, mollitia doloremque.</h1>
+        <h1>Perferendis, eveniet alias!</h1>
+        <h1>Sed, veniam delectus?</h1>
+        <h1>Laborum, sint harum?</h1>
+    </div>
+</body>
+</html>
