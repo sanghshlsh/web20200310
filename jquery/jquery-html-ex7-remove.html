@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css'>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js'></script>
+    <script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js'></script>
+    <title>Document</title>
+    <style>
+    </style>
+    <script>
+    $(document).ready(function() {
+        $("button").click(function() {
+            $(this).remove();
+        });
+
+        $("#head").click(function() {
+            $("#result").empty();
+        });
+    });
+    </script>
+</head>
+<body>
+    <div class='container'>
+        <button class="btn btn-outline-primary">Lorem.</button>
+        <button class="btn btn-outline-primary">Quas.</button>
+        <button class="btn btn-outline-primary">Neque!</button>
+        <button class="btn btn-outline-primary">Eveniet?</button>
+        <button class="btn btn-outline-primary">Delectus!</button>
+        <button class="btn btn-outline-primary">Cupiditate.</button>
+        <button class="btn btn-outline-primary">Et.</button>
+        <button class="btn btn-outline-primary">Perferendis.</button>
+        <button class="btn btn-outline-primary">Officia.</button>
+        <button class="btn btn-outline-primary">Voluptas.</button>
+
+        <div class="row">
+            <div class="col">
+                <h1 id="head">Lorem, ipsum.</h1>
+                <ul id="result">
+                    <li>Lorem.</li>
+                    <li>Quae!</li>
+                    <li>Consequuntur.</li>
+                    <li>Iste.</li>
+                    <li>Illum.</li>
+                    <li>Voluptate?</li>
+                    <li>Voluptate?</li>
+                    <li>Alias.</li>
+                    <li>Molestias.</li>
+                    <li>Repudiandae.</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
